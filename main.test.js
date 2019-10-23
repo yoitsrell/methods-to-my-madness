@@ -52,6 +52,7 @@ describe('startsWith', () => {
   
   it(`can tell whether the first given string starts with the second multi-character string`, () => {
     expect(startsWith('hello', 'hell')).toBe(true)
+    expect(startsWith('hello', 'hll')).toBe(false)
     expect(startsWith('hello', 'ello')).toBe(false)
     expect(startsWith('goodbye', 'good')).toBe(true)
     expect(startsWith('goodbye', 'bye')).toBe(false)
@@ -73,6 +74,7 @@ describe('endsWith', () => {
   
   it(`can tell whether the first given string ends with the second multi-character string`, () => {
     expect(endsWith('hello', 'ello')).toBe(true)
+    expect(endsWith('hello', 'elo')).toBe(false)
     expect(endsWith('hello', 'hell')).toBe(false)
     expect(endsWith('goodbye', 'bye')).toBe(true)
     expect(endsWith('goodbye', 'good')).toBe(false)
