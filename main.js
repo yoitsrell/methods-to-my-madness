@@ -1,30 +1,53 @@
-function slice(string, start = 0, end = string.length) {
-}
-
-function repeat(str, repetitions) {
-}
-
-function startsWith(string, substring) {
-}
-
-function endsWith(str, substring) {
-}
-
-function includes(arr, item) {
-}
-
-function join(arr, separator = '') {
-}
+/******************
+ * YOUR CODE HERE *
+ ******************/
 
 
-function split(str, separator) {
+
+
+
+
+/*********************************
+ * OUR CODE BELOW; DO NOT TOUCH! *
+ *********************************/
+
+
+if (typeof slice === 'undefined') {
+  slice = undefined;
 }
 
-function trimStart(str) {
+if (typeof repeat === 'undefined') {
+  repeat = undefined;
 }
 
-function trimEnd(str) {
+if (typeof startsWith === 'undefined') {
+  startsWith = undefined;
 }
+
+if (typeof endsWith === 'undefined') {
+  endsWith = undefined;
+}
+
+if (typeof includes === 'undefined') {
+  includes = undefined;
+}
+
+if (typeof join === 'undefined') {
+  join = undefined;
+}
+
+if (typeof split === 'undefined') {
+  split = undefined;
+}
+
+if (typeof trimStart === 'undefined') {
+  trimStart = undefined;
+}
+
+if (typeof trimEnd === 'undefined') {
+  trimEnd = undefined;
+}
+
 
 
 module.exports = {
