@@ -76,6 +76,34 @@ function split(str, separator = '') {
   return splitsville;
 }
 
+function trimStart(str){
+  let trimmed = ''
+
+//   for (let i = 0; i < str.length; i++){
+//     if (str[i] !== ' ' && pastSpaces === false){
+//       pastSpaces = true
+//     }
+//     if (pastSpaces){
+//       trimmed += str[i]
+//     }
+//   }
+for (let i= 0; i < str.length; i++){
+  if (str[i] !== ' '){
+    return slice(str, i);
+  }
+}
+  return trimmed
+}
+
+function trimEnd(str){
+
+  for (let i = str.length - 1 ; i >=0; i--) {
+    if (str[i] !== ' '){
+      return slice(str, 0, i + 1);
+    }
+  }
+    return trimmed
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
